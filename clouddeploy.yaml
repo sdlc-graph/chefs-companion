@@ -1,0 +1,24 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: DeliveryPipeline
+metadata:
+ name: chefs-companion
+serialPipeline:
+ stages:
+ - targetId: chefs-companion-staging
+   profiles: [chefs-companion-staging]
+ - targetId: chefs-companion-production
+   profiles: [chefs-companion-production]
+---
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: chefs-companion-staging
+run:
+  location: projects/sdlc-og-test/locations/us-central1
+---
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: chefs-companion-production
+run:
+  location: projects/sdlc-og-test/locations/us-central1

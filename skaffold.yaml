@@ -1,0 +1,13 @@
+apiVersion: skaffold/v4beta13
+kind: Config
+deploy:
+  cloudrun: {}
+profiles:
+- name: chefs-companion-staging
+  manifests:
+    rawYaml:
+    - staging-service.yaml
+- name: chefs-companion-production
+  manifests:
+    rawYaml:
+    - prod-service.yaml
