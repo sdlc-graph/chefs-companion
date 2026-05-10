@@ -1,0 +1,19 @@
+cloudbuild.yaml
+  s_7a4f6a5b10d413::t_b4e429804ca76d 2,4,9-11,13-23,25-30,32,34-37,39,41-42,44,46-50,53-59,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "a60718ceff1008927969587e30a854717766457e",
+  "prompts": {},
+  "sessions": {
+    "s_7a4f6a5b10d413": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "12306041-f5fe-4a96-b55a-1c41ea1e66ad",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Jianxi Wang <jianxiwang@google.com>"
+    }
+  }
+}
